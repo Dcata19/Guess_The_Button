@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Guess The Button</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="d-grid gap-0 position-absolute start-50 translate-middle-x">
+			<div class="p-2 bg-light borde">
+				<p>You have to choose a button, but be careful, only one button is correct!</p>
+			</div>
+			<div class="p-4 bg-light position-relative">
+				<button class="position-absolute top-50 start-0 translate-middle-y btn btn-warning" id="1" onclick="winnerButton(id)">Button</button>
+				<button class="position-absolute top-50 start-50 translate-middle btn btn-warning" id="2" onclick="winnerButton(id)">Button</button>
+				<button class="position-absolute top-50 end-0 translate-middle-y btn btn-warning" id="3" onclick="winnerButton(id)">Button</button>
+			</div>
+			<div class="p-2 bg-light borde position-relative">
+				<p class="position-relative top-50 start-100 translate-middle" id="para"> </p>
+			</div>
+		  </div>
+		<script src = "button.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	</body>
+</html>
